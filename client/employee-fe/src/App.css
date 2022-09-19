@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+h1,span,h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-top: .5rem;
+}
+
+.actions{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttonGroup{
+    display: flex;
+    justify-content: flex-end;
+    gap:2rem;
+    margin-bottom: 1rem;
+}
+
+#emp{
+    width: 30rem;
+    margin:2rem auto;
+    text-align: center;
+}
+
+button:hover,.btn:hover{
+    transform: scale(0.95);
+}
+
+button,.btn{
+    border-radius: 1.5rem;
+}
+
+/* Different root font size set for different breakpoints to make the site responsive using rem */
+
+@media (min-width: 531px) and (max-width: 767px){
+    html{
+        font-size: 13px;
+    }
+}
+@media (min-width: 485px) and (max-width: 530px){
+    html{
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 406px) and (max-width: 484px){
+    html{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 405px){
+    html{
+        font-size: 8px;
+    }
+}
